@@ -1,0 +1,8 @@
+name: LocationShare
+version: 0.0.9
+Author: OG_Ali
+main: me.ogali.locationshare.Main
+api-version: 1.14
+
+commands:
+  LS:

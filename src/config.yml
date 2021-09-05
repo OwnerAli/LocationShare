@@ -1,0 +1,37 @@
+#             ~ PLACEHOLDERS ~
+# - @display - gets command executor's name with rank, nickname, etc.
+# - @name - gets command executor's name. Just the name.
+# - @location - gets command executor's location.
+# - @player - gets the name of the clicked message sender.
+# - @time - gets time left of cooldown in seconds.
+#
+General:
+  # -------------------------ERROR MESSAGES---------------- #
+  Invalid-Player: "&cInvalid or offline player."
+  Usage-Message: "&dUsage: &f/LS <Player>"
+  Tp-Usage-Message: "&cUsage: &f/LS tp <all/player>"
+  # -------------------------SUCCESS MESSAGE---------------- #
+  Success: "&aYour location has been successfully shared."
+  # -------------------------MAIN MESSAGES---------------- #
+  Location-Message: "&d@name's Location: &f[@location]"
+  Placeholder-Message: "&d[@location]&f"
+  Tp-Message: "&6@name has shared his location: [@location] &7(TP)"
+  Tp-Hover-Message: "&fClick to teleport"
+  Tp-Command: "/tpa @player"
+Permission:
+  Reload: ls.reload
+  Ls-Command: ls.use
+  Ls-Tp-Command: ls.tp.use
+  No-Cooldown: ls.nocooldown
+  Placeholder: ls.placeholder
+  No-Perm: "&cYou don't have permission to use this command."
+Cooldown:
+  Command-Time: 5 # in seconds
+  Placeholder-Time: 1 # in seconds
+  Message: "&dYou have to wait &f@time &dsecond(s) before executing this command again."
+Placeholder:
+  # Should the plugin block the player's message when they don't have permission for [Location] placeholder?*
+  # * If false this will show the player's message without replacing [Location] with the player's coordinates.
+  Cancel-Message: true
+  # Should the plugin send the player a permission message when they try to use [Location] with no permission?
+  Permission-Message: true
